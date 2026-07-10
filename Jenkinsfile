@@ -39,6 +39,14 @@ pipeline {
                 sh 'echo this is Deploye'
             }
         }
+        stage('execute shell script'){
+            steps{
+                sh """
+                chmod +x 01-hellow-world.sh
+                ./01-hellow-world.sh
+                """
+            }
+        }
         stage("Print parameters"){
             steps{
 
