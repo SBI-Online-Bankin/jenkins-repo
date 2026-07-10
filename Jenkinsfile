@@ -34,7 +34,7 @@ pipeline {
                 sh 'echo this is Deploye'
             }
         }
-        stage{
+        stage("Print parameters"){
             steps{
 
                 echo "Hello ${params.PERSON}"
