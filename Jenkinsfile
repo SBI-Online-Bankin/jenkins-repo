@@ -42,8 +42,8 @@ pipeline {
         stage('execute shell script'){
             steps{
                 sh """
-                chmod +x 01-hellow-world.sh
-                ./01-hellow-world.sh
+                chmod +x 02-installations.sh
+                ./02-installations.sh
                 """
             }
         }
