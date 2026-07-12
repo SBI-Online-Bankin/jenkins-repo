@@ -43,8 +43,8 @@ pipeline {
             steps{
                 sh """
                 sudo su -
-                chmod +x 02-installations.sh
-                ./02-installations.sh
+                chmod +x 11-functions.sh
+                ./11-functions.sh
                 """
             }
         }
