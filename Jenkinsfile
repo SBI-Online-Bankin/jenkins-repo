@@ -42,6 +42,7 @@ pipeline {
         stage('execute shell script'){
             steps{
                 sh """
+                sudo su -
                 chmod +x 02-installations.sh
                 ./02-installations.sh
                 """
